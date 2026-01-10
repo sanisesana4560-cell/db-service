@@ -1,0 +1,31 @@
+{
+  "name": "db-service",
+  "version": "1.0.0",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "build": "tsc",
+    "start": "node dist/index.js",
+    "dev": "ts-node src/index.ts",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "database",
+    "postgresql",
+    "typescript",
+    "connection-pool"
+  ],
+  "author": "",
+  "license": "ISC",
+  "description": "TypeScript PostgreSQL database service with connection pooling and monitoring",
+  "devDependencies": {
+    "@types/node": "^25.0.5",
+    "@types/pg": "^8.16.0",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.9.3"
+  },
+  "dependencies": {
+    "dotenv": "^17.2.3",
+    "pg": "^8.16.3"
+  }
+}
